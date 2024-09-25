@@ -1,0 +1,76 @@
+Alla on annettu kaksi olio-ohjelmointiin liittyvää tehtävää.
+Ensimmäinen (1) tehtävä on tarkoitettu melko suoraviivaiseksi ja sellaiseksi,
+että siitä tulisi saada toimiva koodi aikaiseksi. Siitä on 3 pistettä 
+tarjolla. 
+
+Jälkimmäinen (2) on puolestaan tehtävä, jossa tässä kohtaa riittää jonkinlainen 
+hahmotelmakin, mitä luokkia toteuttaisi ja suunnilleen millä tavalla. 
+Saa sen tietysti toimivaksikin tehdä. Hahmotelman voit tehdä kynällä ja paperillakin.
+Tämän tarkoitus on toimia lisätehtävänä, jos ensimmäinen oli liian helppo osalle 
+kurssilla olevista. 
+
+Myöhemmin oppitunnilla vähintään tehtävää (1) on tarkoitus tietysti vielä
+käsitellä. 
+
+
+1) Lisää luennon tili & pankki -esimerkkiin asiakasta mallintava luokka. 
+Alunperin asiakkaisiin viitataan vain nimellä, mutta laajenna esimerkkiä
+sillä tavalla, että kirjoitat itse Asiakas-luokan, jossa on sopivat
+instanssimuuttujat ja sopivia metodeja.  Muuta sen jälkeen tarvittavin
+osin Tili-luokkaa. Mahdollisesti koet tarvetta muuttaa Pankkia myös.
+
+
+2) Erääseen kuvitteelliseen, yksinkertaiseen digikameraan 
+tarvitaan sillä kuvattujen kuvien hallintajärjestelmä. 
+Digikamerassa on prosessori tai  tulkki, joka voi 
+suorittaa Pythonilla kirjoitettuja ohjelmia.
+
+
+Kamera kykenee kuvaamaan 256-sävyisiä harmaasävykuvia. 
+Yhdessä kuvassa on vaakasuunnassa 640 ja pystysuunnassa 480 kuvapistettä.
+Yksittäisen kuvapisteen väri ilmaistaan kokonaisluvulla. Täysin mustaa 
+kuvapistettä vastaa luku nolla ja valkoista 255. Muut  harmaasävyt ovat 
+tasaisesti tältä väliltä; mitä pienempi luku,
+sen tummempi kuvapiste. Kuvan olennaisimman tietosisällön 
+muodostaa kokonaisluvuista koostuva sekvenssi, johon on tallennettu 
+kaikkien kuvapisteiden sävytieto. Jokaiseen kuvaan tallentuu myös tieto 
+kuvaushetkestä (pvm, klo) merkkijonona.
+
+Kuvia voidaan käsitellä kameran hallintajärjestelmässä alkeellisilla
+tavoilla. Eräs tällainen käsittelytemppu on kuvan kääntäminen ylösalaisin.
+Siinä ensimmäinen kuvapiste vaidetaan viimeisen kanssa, toinen toiseksi
+viimeisen jne. Toinen käsittelytoimenpide on kuvan muuttaminen negatiivikseen.
+Negatiiviseksi yksittäinen pikseli muuttuu, kun sen sävyarvo vähennetään 255:stä.
+Tekemällä näin jokaiselle kuvan pikselille, saadaan kuva muutettua negatiiviksi.
+
+Kameralla voi tietysti ottaa useita kuvia. Kuvapankki on olio,
+johon on tallennettu kaikki kameran muistissa tietyllä hetkellä
+olevat kuvat, tai tarkemmin, viittaukset kuviin. 
+Kuvapankkiin pitää voida lisätä ja poistaa kuvia ja sinne tallennettujen
+kuvien lukumäärä pitää voida selvittää. Kuvapankista saa yksittäisen
+kuvaolion käsiteltäväksi indeksinumeron perusteella.
+
+Kirjoita luokka Harmaasavykuva, joka noudattaa yllä annettua 
+kuvausta. Toteuta myös kuvatut kaksi kuvankäsittelyrutiinia.
+Kirjoita myös sellaiset tarvittavat havainnoijat, joita ei suoraan
+tehtävässä ole pyydetä, mutta joille arvelisit olevan käyttöä.
+Kirjoita luokka Kuvapankki, joka noudattaa yllä annettua 
+kuvausta. Toteuta myös kuvatut rutiinit. Kuvaolioiden ylläpitoon
+voi käyttää esimerkiksi listaa, jossa on viittauksia Harmaasavykuva-luokan 
+objekteihin. Kirjoita myös sellaiset tarvittavat havainnoijat, joita ei 
+suoraan tehtävässä ole pyydetty, mutta joille arvelisit olevan käyttöä.
+
+Kirjoita testausohjelma, jossa luot pari kuva ja kuvapankin
+ja käytät Kuvapankin ja Harmaasavykuvan rutiineja ikäänkuin 
+testatessa.
+
+Noudata olio-ohjelmoinnin periaatteita ja hyvää ohjelmointitapaa.
+Kirjoita jokaiseen rutiiniin toteutuksen lisäksi ulkoinen
+kuvaus.
+
+Kohdissa yllä olevissa kohdissa voit olettaa edelliset kohdat ratkaistuiksi,
+vaikket itse olisikaan osannut toteuttaa niitä, jotta voit hahmotella seuraavia
+kohtia.
+
+
+
